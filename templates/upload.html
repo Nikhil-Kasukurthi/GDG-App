@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block body %}
+  <h2>Update Database</h2>
+  {% if error %}<p class=error><strong>Error:</strong> {{ error }}{% endif %}
+    <form action="" method=post enctype=multipart/form-data>
+      <dl>
+         <dd><input type='file' name='file'>
+         <dd><input type='submit' value='Upload'>
+      </dl>
+    </form>
+{% endblock %}  
